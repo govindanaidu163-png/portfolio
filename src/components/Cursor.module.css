@@ -1,0 +1,28 @@
+.dot {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #6c63ff;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 8px rgba(108,99,255,0.9);
+  mix-blend-mode: screen;
+}
+
+.ring {
+  position: fixed;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(108,99,255,0.6);
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+@media (hover: none) {
+  .dot, .ring { display: none; }
+}
