@@ -62,7 +62,7 @@ export default function Contact() {
 
   const socials = [
     { name: 'GitHub', href: 'https://github.com/govindanaidu163-png', icon: '⌥' },
-    { name: 'LinkedIn', href: 'https://linkedin.com/in/govindanaidu163-png', icon: '⌘' },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/p-govinda-naidu-b75a6b389', icon: '⌘' },
     { name: 'Twitter', href: 'https://twitter.com/govindanaidu163-png', icon: '⌤' },
     { name: 'Dribbble', href: 'https://dribbble.com/govindanaidu163-png', icon: '◈' },
     { name: 'Instagram', href: 'https://instagram.com/govindanaidu163-png', icon: '◆' }
@@ -114,7 +114,14 @@ export default function Contact() {
             </div>
             <div className={styles.socials}>
               {socials.map(s => (
-                <a key={s.name} href={s.href} className={styles.socialBtn} aria-label={s.name}>
+                <a 
+                  key={s.name} 
+                  href={s.href} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.socialBtn} 
+                  aria-label={s.name}
+              >
                   <span className={styles.socialIcon}>{s.icon}</span>
                   <span className={styles.socialName}>{s.name}</span>
                 </a>
